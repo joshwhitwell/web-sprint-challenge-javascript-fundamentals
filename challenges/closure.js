@@ -26,10 +26,10 @@ The function nestedFunction() is able to access the variable internal using "clo
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-function summation(parameter){
+function summation(number){
   let counter = 0;
-    for (let i = 0; i < parameter; i++){
-    counter += (i+1);
+    for (let i = 0; i < number; i++){
+      counter += (i+1);
     }
     return counter;
 }
