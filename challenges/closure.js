@@ -3,18 +3,18 @@
 /* Task 1: Study the code below and explain in your own words why nested function can access the variable internal. */
 
 
-const external = "I'm outside the function";
+// const external = "I'm outside the function";
 
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
+// function myFunction() {
+//   console.log(external);
+//   const internal = "Hello! I'm inside myFunction!";
 
-  function nestedFunction() {
-    console.log(internal);
-  };
-  nestedFunction();
-}
-myFunction();
+//   function nestedFunction() {
+//     console.log(internal);
+//   };
+//   nestedFunction();
+// }
+// myFunction();
 
 // Explanation: 
 
