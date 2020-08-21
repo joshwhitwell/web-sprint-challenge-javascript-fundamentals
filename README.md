@@ -27,13 +27,29 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach and .map are both advanced array methods. These two methods are similar in that both will loop over the items in an array and execute a function passed in as a parameter on each item. .forEach and .map both do not mutate the original array, however .map will create a new array as its return value, whereas .forEach will not.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function that receives another function as a callback. A callback, therefore, is a function that is passed into a higher order function as an argument.
 
 3. What is closure?
 
+Closures describes the combination of a function and the lexical environment within which the function is declared. Closure occurs when a function must reaches outside of its own functional scope/lexical context to access data, such as a variable.
+
 4. Describe the four rules of the 'this' keyword.
 
+Global binding - When used in the global scope this will refer to the global object, i.e. the window in the browser or the console/global object in node. If using strict mode in JS, referencing the this keyword in the global scope will return an undefined.
+
+Implicit binding - In implicit binding, the this keyword is bound to the object it is called upon at the time of function invocation, i.e. when a method of an object is invoked, the this keyword will refer to the object to the left of the method when using dot notation.
+
+Explicit binding - In explicit binding, the this keyword is bound explicitly to an object by using the .call, .apply, or .bind methods. When using .call, .apply, or .bind the owner object that this will refer to is passed in as an argument. .Call and .apply will invoke the function immediatley upon being called, .bind will not invoke the function but will return a new function to be called later. .Call and .bind receive arguments individually, whereas .apply receives arguments as an array.
+
+New binding - The new binding allows us to bind methods and values to objects using the this keyword and a constructor function. When using a constructor function and the new keyword to create an instance of an object, the this keyword will refer to the new object that is created and returned by the constructor function.
+
 5. Why do we need super() in an extended class?
+
+Using class syntax, super() and extend function similarly to the Object.create() method and .call method, respectively, in pseudo-classical inheritance and prototypes. The super() method allows us to bind the attributes being passed into the object constructor of a child class, to the parent class. Extend allows the child class objects to inherit the proeprties of the parent class, i.e. it "extends" the properties of the parent class to the child class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
